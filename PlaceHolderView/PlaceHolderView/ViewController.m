@@ -19,6 +19,8 @@
     [super viewDidLoad];
 
     placeholderView = [[PlaceholderView alloc]initWithFrame:self.webView.frame];
+    
+    NSLog(@"做merge测试一下");
 
     [placeholderView setPlaceholderImage:[UIImage imageNamed:@"info"] withImageSize:CGSizeMake(60, 60) andMessage:@"Sorry, Can not connect to server, please check network configuration"];
     [placeholderView addPlaceholderTapTarget:self andAction:@selector(reloadWeb)];
